@@ -6,7 +6,7 @@ export default function ProductCard({search}) {
 
     //console.log(search)
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 p-8 mx-8 md:mx-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-8 p-8 mx-8 md:mx-12">
        
         {data.filter(item => item.name.toLowerCase().includes(search.toLowerCase().trim()))
             .map((item) => {
