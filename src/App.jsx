@@ -9,7 +9,7 @@ function App() {
       <h1 className="text-3xl md:text-5xl font-bold text-indigo-600 text-center p-8">Product Store</h1>
       {/* Search Bar */}
       <div className="flex justify-center items-center">
-        <input className="border-2 rounded-xl px-4 py-2 w-sm md:w-lg border-indigo-300 hover:border-3 focus:outline-none" 
+        <input className="border-2 rounded-xl px-4 py-2 w-sm md:w-lg border-indigo-300 hover:border-3 hover:cursor-pointer focus:outline-none" 
               type="text" 
               placeholder="Search..." 
               value={search} 

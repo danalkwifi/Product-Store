@@ -11,7 +11,7 @@ export default function ProductCard({search}) {
         {data.filter(item => item.name.toLowerCase().includes(search.toLowerCase().trim()))
             .map((item) => {
                 return (
-                    <div key={item.id} className='border-3 rounded-xl border-blue-300 m-3 p-3 hover:border-blue-500' >
+                    <div key={item.id} className='border-3 rounded-xl border-blue-300 m-3 p-3 hover:border-blue-500 hover:border-4 hover:cursor-pointer' > 
                         <img className='w-full object-cover h-48 border-0 rounded-xl' src={item.image} alt={item.name} />
                         <h3 className='text-md md:text-lg font-semibold text-center pt-2'>{item.name}</h3>
                         <p className='text-sm mt-3'>{item.description}</p>
