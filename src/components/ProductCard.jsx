@@ -11,15 +11,21 @@ export default function ProductCard({search}) {
     //change h3 into input 
     //how to save the update the js file?
 
-    const handleEdit = () => {
-        setEdit(true)
-        
+    const handleEdit = (index) => {
+        if(edit){
+            setEdit(false)
+        }else{
+            setEdit(true)
+            setUpdate(data[index].name)
+            console.log(update)
+            
+        }
+        //console.log(edit)
     }
 
     const handleUpdateName = (index) => {
-        setEdit(false)
-        setUpdate(data[index].name)
-        console.log(data[index].name)
+        s
+        //console.log(data[index].name)
     }
     
     const handleDescriptionUpdate = (index) => {
@@ -53,7 +59,7 @@ export default function ProductCard({search}) {
                             ( 
                                 <div className='flex flex-row justify-center items-center p-2'>
                                     <h3 className='text-md md:text-lg font-semibold'>{item.name}</h3>
-                                    <button className='hover:cursor-pointer px-3' onClick={() => handleEdit()}><FontAwesomeIcon icon={faPenToSquare} /></button>
+                                    <button className='hover:cursor-pointer px-3' onClick={() => handleEdit(index)}><FontAwesomeIcon icon={faPenToSquare} /></button>
                                 </div>
                             )
                             }
