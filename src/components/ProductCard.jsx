@@ -27,6 +27,8 @@ export default function ProductCard({search}) {
         newData[index].name = update
     
         console.log(newData[index].name)
+
+        //save changes to product.js
         
     }
     
