@@ -18,7 +18,7 @@ export default function ProductCard({search}) {
 
     // called when the user confirms the edit/update a product's name 
     const handleUpdateName = (index) => {    
-        const newData = [...product];
+        const newData = [...product]; //*
         newData[index].name = update
         setProducts(newData);
         setEdit(null)
@@ -28,7 +28,7 @@ export default function ProductCard({search}) {
     
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-8 p-8 mx-8 md:mx-12 ">
-       
+       {/** * */}
         {product.filter(item => item.name.toLowerCase().includes(search.toLowerCase().trim()) || item.description.toLowerCase().includes(search.toLowerCase().trim()))
             .map((item, index) => {
                 return (
