@@ -60,7 +60,7 @@ export default function ProductCard({search}) {
                         
                         <div className='flex flex-row justify-between items-center p-2'>
                             <p className='text-sm px-2'>{item.description}</p>
-                            <button className='hover:cursor-pointer px-3'><FontAwesomeIcon icon={faPenToSquare} /></button>
+                            <button className='hover:cursor-pointer px-3'></button>
                         </div>
                     </div>
                 )
