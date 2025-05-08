@@ -1,10 +1,24 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+import ReactDOM from "react-dom/client"
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Home'
+import ProductPage from './components/ProductPage'
+import Header from './components/Header'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+export default function App() {
+  return(
+    <BrowserRouter>
+        <Header />
+
+      <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='page/:index' element={<ProductPage />}  />
+      </Routes>
+      
+    </BrowserRouter>
+  )
+}
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />)

@@ -1,15 +1,15 @@
 import { useState } from "react"
 import ProductCard from "./components/ProductCard"
+import ProductPage from "./components/ProductPage"
 
-function App() {
+function Home() {
   const [search, setSearch] = useState('')
 
   return (
     <div>
-      <h1 className="text-3xl md:text-5xl font-bold text-indigo-600 text-center p-8">Product Store</h1>
       {/* Search Bar */}
       <div className="flex justify-center items-center">
-        <input className="border-2 rounded-xl px-4 py-2 w-sm md:w-lg border-indigo-300 hover:cursor-pointer focus:outline-none" 
+        <input className="border-2 rounded-xl px-4 py-2 w-sm md:w-lg border-indigo-300 hover:cursor-pointer focus:outline-none focus:border-sky-400" 
               type="text" 
               placeholder="Search..." 
               value={search} 
@@ -24,4 +24,4 @@ function App() {
   )
 }
 
-export default App
+export default Home
