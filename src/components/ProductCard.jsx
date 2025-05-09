@@ -37,7 +37,7 @@ function ProductCard({search}) {
                         <img className='w-full object-cover h-48 border-0 rounded-xl hover:cursor-pointer' src={item.image} alt={item.name} onClick={() => navigate(`/page/${item.id}`)} />
                             {edit === index ? (
                                 <div className='flex flex-row justify-center items-center m-2'>
-                                    <input className="border-2 rounded-xl p-2 m-2 border-indigo-200 focus:outline-none focus:border-indigo-400 " 
+                                    <input className="border-2 rounded-xl p-2 m-2 lg:max-fit border-indigo-200 focus:outline-none focus:border-indigo-400 " 
                                         type="text"
                                         placeholder={item.name} 
                                         value={update}
@@ -68,7 +68,7 @@ function ProductCard({search}) {
                             
                         
                         <div className='flex flex-row justify-between items-center p-2'>
-                            <p className='text-sm md:text-md lg:text-lg px-2 text-gray-700'>{item.description}</p>
+                            <p className='text-sm md:text-md px-2 text-gray-700'>{item.description}</p>
                             <button className='hover:cursor-pointer px-3'></button>
                         </div>
                     </div>
